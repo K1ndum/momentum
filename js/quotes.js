@@ -10,7 +10,7 @@ async function getQuotes() {
     quotes = 'https://type.fit/api/quotes';
   } else {
     randomQuotes = getRandomIntInclusive(0, 11);
-    quotes = '../js/quotesRU.json';
+    quotes = '..momentum/js/quotesRU.json';
   }
   const res = await fetch(quotes);
   const data = await res.json(); 
