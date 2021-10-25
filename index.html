@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <div class="progress-and-song">
+          <div class="song-name"></div>
+          <input class="progress-song" type="range" min="0" max="100" step="0.01" value="0">
+        </div>
+        <div class="time-song">
+          <span class="current-time">0:00</span>
+          <span class="duration-time">/ 0:00</span>
+        </div>
+        <button class="volume player-icon"></button>
+        <input class="progress-volume" type="range" min="0" max="1" step="0.01" value="1">
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="[Enter city]"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="setting-menu">
+      <div class="show">Show</div>
+      <div class="customize">Customize your dashboard</div>
+      <ul>
+        <li>
+          <span class="textSetting">Bg-image from</span>
+          <select name="bgiApi" class="bgiApi">
+            <option value="github" selected="selected">Github</option>
+            <option value="unsplash">Unsplash API</option>
+            <option value="flickr">Flickr API</option>
+          </select>
+          <span>Tags</span>
+          <select name="tags" class="tags">
+            <option value="nature" selected="selected">Nature</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            <option value="night">Night</option>
+            <option value="afternoon">Anime</option>
+            <option value="skate">Skate</option>
+            <option value="car">Car</option>
+            <option value="rap">Rap</option>
+          </select>
+        </li>
+        <li><span class="textSetting">language</span>
+          <div class="leng-conteiner">
+            <span class="leng active-leng">en</span>
+            <span class="leng">ru</span>
+          </div>
+        </li>
+        <li><span class="textSetting">time</span><input type="checkbox" class="time-check" checked></li>
+        <li><span class="textSetting">date</span><input type="checkbox" class="date-check" checked></li>
+        <li><span class="textSetting">greeting</span><input type="checkbox" class="greeting-check" checked></li>
+        <li><span class="textSetting">quote of the day</span><input type="checkbox" class="quote-check" checked></li>
+        <li><span class="textSetting">weather</span><input type="checkbox" class="weather-check" checked></li>
+        <li><span class="textSetting">audio player</span><input type="checkbox" class="audio-check" checked></li>
+        <li><span class="textSetting">Todo list</span><input type="checkbox" class="todo-check" checked></li>
+      </ul>
+    </div>
+    <div class="setting">
+    </div>
+    <div class="qoute-conteiner">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="toDoList">
+      <div class="toDo-container">
+        <select name="Todo" class="toDayorDone">
+          <option value="today">Today</option>
+          <option value="done">Done</option>
+        </select>
+        <div class="toDay onList">
+          <ul></ul>
+        </div>
+        <div class="done">
+          <ul></ul>
+        </div>
+        <input class="todoInput" type="text" placeholder="New Todo">
+      </div>
+      <div class="toDoIcon">Todo</div> 
+    </div>
+  </footer>
+  <script src="js/clockAndCalendar.js"></script>
+  <script src="js/sliderBg.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/audioPlayer.js"></script>
+  <script src="js/lenguage.js"></script>
+  <script src="js/setting.js"></script>
+  <script src="js/toDoList.js"></script>
+</body>
+</html>
