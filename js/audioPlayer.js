@@ -1,22 +1,22 @@
 const playList = [
   {      
     title: 'Aqua Caelestis',
-    src: '../assets/sounds/Aqua Caelestis.mp3',
+    src: 'assets/sounds/Aqua Caelestis.mp3',
     duration: '0:39'
   },  
   {      
     title: 'River Flows In You',
-    src: '../assets/sounds/River Flows In You.mp3',
+    src: 'assets/sounds/River Flows In You.mp3',
     duration: '1:36'
   },
   {      
     title: 'Summer Wind',
-    src: '../assets/sounds/Summer Wind.mp3',
+    src: 'assets/sounds/Summer Wind.mp3',
     duration: '1:50'
   },
   {      
     title: 'Ennio Morricone',
-    src: '../assets/sounds/Ennio Morricone.mp3',
+    src: 'assets/sounds/Ennio Morricone.mp3',
     duration: '1:37'
   }
 ]
@@ -130,7 +130,7 @@ function rewindAudio(e) {
 function controlVolume() {
   audio.volume = progressVolume.value;
   if ( progressVolume.value == 0) {
-    volume.style.backgroundImage = 'url("../assets/svg/volumeMuted.png")';
+    volume.style.backgroundImage = 'url("assets/svg/volumeMuted.png")';
   } else {
     volume.style.backgroundImage = '';
   }
