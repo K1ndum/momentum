@@ -53,7 +53,6 @@ function playThisAudio() {
   playListContainer.children[playNum].classList.add('item-active');
   audio.src = playList[playNum].src;
   songName.textContent = playList[playNum].title;
-  console.log(this.id)
   if (playId == this.id) {
     if (isPlay) {
       audio.pause();
