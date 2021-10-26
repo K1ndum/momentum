@@ -9,7 +9,7 @@ async function getQuotes() {
     randomQuotes = getRandomIntInclusive(0, 99);
     quotes = 'https://type.fit/api/quotes';
   } else {
-    randomQuotes = getRandomIntInclusive(0, 10);
+    randomQuotes = getRandomIntInclusive(1, 10);
     quotes = 'js/quotesRU.json';
   }
   const res = await fetch(quotes);
