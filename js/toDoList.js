@@ -131,3 +131,5 @@ addafterLoading(doneObj, done);
 selectTodo.addEventListener('change', swapList)
 todoInput.addEventListener('keydown', addTodo);
 Todo.addEventListener('click', openTodo);
+
+console.log('Самопроверка \n Все пункты выполнены. Набрал 160 баллов из 150. \n Если найдете ошибки, пишите в дискорд k1ndum#3452. Спасибо за проверку ;)')
