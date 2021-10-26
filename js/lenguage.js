@@ -4,24 +4,28 @@ const textSetting = document.querySelectorAll('.textSetting');
 const textShow = document.querySelector('.show');
 const textCustomize = document.querySelector('.customize');
 const textSettingRU = {
-  0: 'Язык',
-  1: 'Время',
-  2: 'Дата',
-  3: 'Приветствие',
-  4: 'Цитата дня',
-  5: 'Погода',
-  6: 'Аудио плеер',
-  7: 'Список дел (Todo)',
+  0: 'Задний фон',
+  1: 'Теги',
+  2: 'Язык',
+  3: 'Время',
+  4: 'Дата',
+  5: 'Приветствие',
+  6: 'Цитата дня',
+  7: 'Погода',
+  8: 'Аудио плеер',
+  9: 'Список дел (Todo)',
 }
 const textSettingEN = {
-  0: 'Language',
-  1: 'Time',
-  2: 'Date',
-  3: 'Greeting',
-  4: 'Quote Of The Day',
-  5: 'Weather',
-  6: 'Audio Player',
-  7: 'Todo List',
+  0: 'Bg-images from',
+  1: 'tags',
+  2: 'Language',
+  3: 'Time',
+  4: 'Date',
+  5: 'Greeting',
+  6: 'Quote Of The Day',
+  7: 'Weather',
+  8: 'Audio Player',
+  9: 'Todo List',
 }
 
 function changeLenguage() {
@@ -44,13 +48,13 @@ function changeLenguage() {
 
 function changeLengSetting() {
   if (lengNow == 'en') {
-    for (let i = 0; i <= 7; i++) {
+    for (let i = 0; i <= 9; i++) {
       textSetting[i].textContent = textSettingEN[i];
     }
     textShow.textContent = 'show';
     textCustomize.textContent = 'Customize your dashboard';
   } else {
-    for (let i = 0; i <= 7; i++) {
+    for (let i = 0; i <= 9; i++) {
       textSetting[i].textContent = textSettingRU[i];
     }
     textShow.textContent = 'Отображение';
@@ -68,6 +72,7 @@ function changeLenguageUpdate() {
 }
 
 changeLenguageUpdate();
+changeLengSetting();
 
 en.addEventListener('click', changeLenguage);
 ru.addEventListener('click', changeLenguage);
